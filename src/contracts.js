@@ -1,3 +1,5 @@
+import {Contract} from './contract';
+
 export class Contracts {
 	
 	constructor() {
@@ -8,7 +10,7 @@ export class Contracts {
 		
 		let contract = this.contracts.find(elem => elem.id === contractId);
 		if(!contract) {
-			contract = { id: contractId }
+			contract = new Contract(contractId);
 			this.contracts.push(contract);
 		}
 		return contract;

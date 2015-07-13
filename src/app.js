@@ -13,7 +13,7 @@ constructor() {
     config.title = 'Aurelia';
     config.map([
       { route: ['','welcome'], name: 'welcome',      	moduleId: './welcome',      nav: true, title:'Welcome' },
-      { route: 'contract/:id', name: 'contract',			moduleId: './contract', 		title:'Contract' }
+      { route: 'contract/:id', name: 'contract',			moduleId: './contractcontainer', 		title:'Contract' }
     ]);
 
     this.router = router;
